@@ -12,9 +12,7 @@ variables:
   # Container registry service connection established during pipeline creation
   dockerRegistryServiceConnection: 'b38ca1ab-f531-418a-96af-5646d12c6a8f'
   imageRepository: 'ltlpipelines-sample'
-  containerRegistry1: $(eus_acr)
-  containerRegistry2: $(wus_acr)
-  containerRegistry3: $(ncus_acr)
+  containerRegistry: 'ltlacreastus.azurecr.io'
   dockerfilePath: 'app/Dockerfile'
   tag: '$(Build.BuildId)'
 
